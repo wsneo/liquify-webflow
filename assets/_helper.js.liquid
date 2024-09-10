@@ -1,0 +1,62 @@
+const LiquifyHelper = {
+    moneyFormat: (value, minor = true) => {
+        const formatter = new Intl.NumberFormat(Shopify.locale + '-' + Shopify.country, {
+            style: 'currency',
+            currency: Shopify.currency.active,
+        });
+
+        value = minor ? value / 100 : value;
+
+        return formatter.format(value);
+    },
+
+    htmlspecialchars_decode(string) {
+        let tempElement = document.createElement('textarea');
+        tempElement.innerHTML = string;
+        return tempElement.value;
+    },
+
+    triggerClick: function (el) {
+        if(!(el instanceof HTMLElement)) {
+            console.info(el + ' must be an instance of HTMLElement')
+            return
+        }
+        const ev = new KeyboardEvent("keydown",{
+            code: 'Enter',
+            key: 'Enter',
+            charCode: 13,
+            keyCode: 13,
+            view: window,
+            bubbles: true
+        });
+
+        el.dispatchEvent(ev);
+    },
+
+    /**
+     * Trigger dropdown click to open minicart
+     */
+    handleTriggerClick: function () {
+        let elements = document.querySelectorAll('[li-element="mini-cart-toggle"]');
+        elements.forEach(element => {
+            let closestDropdown = element.closest('.w-dropdown-toggle');
+            if (closestDropdown) {
+                this.triggerClick(closestDropdown);
+            } else {
+                console.error('(helper.js) No dropdown found for minicart trigger');
+            }
+        });
+    },
+
+    triggerClickById: (id) => {
+        const el = document.getElementById(id)
+        LiquifyHelper.triggerClick(el)
+    },
+
+    triggerClickByClass: (className) => {
+        const elList = document.getElementsByClassName(className)
+        for (const el of elList) {
+            LiquifyHelper.triggerClick(el)
+        }
+    }
+};
