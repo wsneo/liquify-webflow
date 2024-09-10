@@ -1,0 +1,15 @@
+<div><div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true"><div class="mask w-slider-mask">{% for block in section.blocks %}
+    {% if block.type == "slide" %}
+                    <div li-block="Slide" class="w-slide">
+                                    <a class="link-block-2 w-inline-block" href="{{ block.settings.url_banner_link }}"> <img class="image" src="{{ block.settings.image_banner | img_url: 'master' }}" alt="{{ block.settings.image_banner.alt }}" loading="lazy"> </a>
+
+                                    <div class="div-block-6"><div class="div-block-5"><div class="header_card"><div class="div-block-7"><h1 class="heading">
+{{ block.settings.text_heading }}
+</h1>
+<p class="paragraph"> {{ block.settings.textarea_description }} </p>
+<a class="button-2 w-button" href="{{ block.settings.url_link }}"> Button Text </a>
+</div></div></div></div>
+                            </div>
+            {% endif %}
+{% endfor %}
+</div><div class="w-slider-arrow-left"><div class="w-icon-slider-left"></div></div><div class="w-slider-arrow-right"><div class="w-icon-slider-right"></div></div><div class="w-slider-nav w-round w-num"></div></div></div> {% schema %} {"tag":"div","name":"slider","blocks":[{"name":"Slide","type":"slide","settings":[{"id":"url_banner_link","type":"url","label":"Banner Link"},{"id":"image_banner","type":"image_picker","label":"Banner"},{"id":"text_heading","type":"text","label":"Heading","default":"Heading"},{"id":"textarea_description","type":"textarea","label":"Description","default":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."},{"id":"url_link","type":"url","label":"Link"}]}],"presets":[{"name":"slider","category":"Liquify"}]} {% endschema %}
