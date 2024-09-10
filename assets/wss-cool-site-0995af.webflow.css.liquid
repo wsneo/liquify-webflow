@@ -647,10 +647,12 @@ figcaption {
 }
 
 .container-large {
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 85rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  display: flex;
 }
 
 .form_message-error {
@@ -1628,7 +1630,7 @@ figcaption {
 }
 
 .nav_menu.is-page-height-tablet {
-  flex-flow: row;
+  flex-flow: wrap;
   flex: none;
   justify-content: flex-start;
   align-items: center;
@@ -1707,10 +1709,13 @@ figcaption {
 }
 
 .nav_shop-icons {
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  flex-flow: row;
   flex: none;
+  order: 0;
   justify-content: flex-end;
+  align-self: auto;
   align-items: center;
   width: 40%;
   display: flex;
@@ -2027,6 +2032,7 @@ figcaption {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  display: inline-block;
   position: absolute;
   inset: 0%;
 }
@@ -3412,7 +3418,7 @@ figcaption {
 
 .header_card {
   text-align: center;
-  flex-direction: column;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   min-height: 40rem;
@@ -3612,6 +3618,81 @@ figcaption {
 
 .link-block {
   padding-right: 5px;
+}
+
+.div-block {
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div-block-2 {
+  text-align: center;
+  display: block;
+}
+
+.div-block-3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.slider {
+  height: 100vh;
+}
+
+.link-block-2 {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.image {
+  box-sizing: border-box;
+  aspect-ratio: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.div-block-4 {
+  position: static;
+}
+
+.div-block-5 {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: static;
+  inset: 0%;
+}
+
+.div-block-6 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  inset: 0%;
+}
+
+.div-block-7 {
+  max-width: 45rem;
+}
+
+.heading, .paragraph {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button-2 {
+  background-color: #000;
 }
 
 @media screen and (max-width: 991px) {
