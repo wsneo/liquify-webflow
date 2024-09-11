@@ -1,28 +1,107 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
-    "sections": {
-        "liquify_hero": {
-            "type": "liquify_hero"
-        },
-        "hero": {
-            "type": "hero"
-        },
-        "category": {
-            "type": "category"
-        },
-        "links": {
-            "type": "links"
-        },
-        "content": {
-            "type": "content"
-        }
+  "sections": {
+    "liquify_hero": {
+      "type": "liquify_hero",
+      "settings": {
+        "text_headline": "Liquify official Starter Template 1.0",
+        "text_description": "This template is a perfect starting point for your Shopify store, including everything you need to get your online shop up and running. It is based on the latest <a href=\"http:\/\/finsweet.com\/client-first\/docs\">Client First<\/a> Clonable.",
+        "url_link": "",
+        "text_button_text": "Read the Docs"
+      }
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "liquify_hero",
-        "hero",
-        "category",
-        "links",
-        "content"
-    ]
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "text_headline": "Short heading here",
+        "richtext_text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<\/p>",
+        "url_button_link": "",
+        "text_button_text": "More Information"
+      }
+    },
+    "category": {
+      "type": "category",
+      "settings": {
+        "text_headline": "Short heading here",
+        "url_button_link": "",
+        "text_button_text": "All products",
+        "collection_collection": "",
+        "collection_collection_limit": 6
+      }
+    },
+    "links": {
+      "type": "links",
+      "settings": {
+        "text_headline": "Short heading here"
+      }
+    },
+    "content": {
+      "type": "content",
+      "settings": {
+        "text_headline": "Short heading here",
+        "text_button_text": "All Articles",
+        "url_button_link": "",
+        "url_artikel_1_link": "",
+        "text_artikel_1_titel": "Blog title heading will go here",
+        "text_artikel_1_excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        "article_artikel_2": "",
+        "url_artikel_2_link": "",
+        "text_artikel_2_titel": "Blog title heading will go here",
+        "text_artikel_2_excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        "article_artikel_3": "",
+        "url_artikel_3_link": "",
+        "text_artikel_3_titel": "Blog title heading will go here",
+        "text_artikel_3_excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      }
+    },
+    "slider_DDJYtM": {
+      "type": "slider",
+      "blocks": {
+        "slide_XrXwkj": {
+          "type": "slide",
+          "settings": {
+            "url_banner_link": "",
+            "image_banner": "shopify:\/\/shop_images\/Asics-x-Carnival_35f4032a-4835-4f8c-87d5-00306395a6a2.jpg",
+            "text_heading": "Heading",
+            "textarea_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+            "url_link": ""
+          }
+        },
+        "slide_gLHEhK": {
+          "type": "slide",
+          "settings": {
+            "url_banner_link": "",
+            "image_banner": "shopify:\/\/shop_images\/Asics-x-Carnival-Mobile_f8f7b162-1a91-4f2b-aec9-93d22911d487.jpg",
+            "text_heading": "Heading",
+            "textarea_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+            "url_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_XrXwkj",
+        "slide_gLHEhK"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "liquify_hero",
+    "hero",
+    "category",
+    "links",
+    "content",
+    "slider_DDJYtM"
+  ]
 }

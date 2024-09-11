@@ -1,1 +1,51 @@
-{}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "image_logo": "shopify:\/\/shop_images\/cxo-logo_1_6aedf63d-dbd6-4e93-928e-00b074031343.jpg",
+          "collection_bestseller": "",
+          "collection_bestseller_limit": 6
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "text_newsletter_headline": "Signup for Newsletter",
+          "text_checkbox": "By subscribing you agree to with our <a href=\"#\"><span class=\"text-color-white text-style-link\">Privacy Policy<\/span><\/a> and provide consent to receive updates from our company."
+        }
+      },
+      "slider": {
+        "type": "slider",
+        "settings": {
+        }
+      },
+      "login": {
+        "type": "login",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "16278478101612877664": {
+        "type": "shopify:\/\/apps\/pagefly-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  }
+}
